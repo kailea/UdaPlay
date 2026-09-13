@@ -1,0 +1,31 @@
+# --- secrets -----------------------------------------------------------------
+config.env
+.env
+*.env
+!config.env.example
+
+# --- generated vector store --------------------------------------------------
+# Rebuilt from games/*.json by Udaplay_01. Binary SQLite + HNSW index files;
+# nothing here is worth versioning and it churns on every run.
+chromadb/
+
+# --- python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- jupyter -----------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- os / editor -------------------------------------------------------------
+.DS_Store
+.vscode/
+.idea/

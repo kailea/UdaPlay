@@ -1,0 +1,15 @@
+# UdaPlay - local development dependencies
+# python 3.11 or newer
+
+chromadb>=1.0.4
+openai>=1.73.0
+pydantic>=2.11.3
+python-dotenv>=1.1.0
+tavily-python>=0.5.4
+
+# Required indirectly: lib/memory.py -> lib/vector_db.py -> lib/loaders.py imports
+# pdfplumber at module level, and notebook 02 imports ShortTermMemory from lib.memory.
+pdfplumber>=0.11.0
+
+# To run the notebooks locally (skip if you use the VS Code / Cursor notebook UI)
+jupyterlab>=4.0.0
